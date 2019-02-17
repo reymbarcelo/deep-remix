@@ -1,0 +1,5 @@
+Captioning image ./sample-images/citizen_kane.jpg
+Captions for image citizen_kane.jpg:
+  0) a man in a suit and tie holding a microphone . (p=0.000125)
+  1) a man in a suit and tie holding a microphone (p=0.000046)
+  2) a man in a suit and tie with a hat on . (p=0.000032)

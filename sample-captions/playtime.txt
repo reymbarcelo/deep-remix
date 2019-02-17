@@ -1,0 +1,5 @@
+Captioning image ./sample-images/playtime.jpg
+Captions for image playtime.jpg:
+  0) a group of people standing around a luggage carousel . (p=0.000840)
+  1) a group of people standing around a baggage claim . (p=0.000307)
+  2) a group of people standing around a baggage claim area . (p=0.000161)

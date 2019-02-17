@@ -1,0 +1,5 @@
+Captioning image ./sample-images/mishima.jpg
+Captions for image mishima.jpg:
+  0) a man holding an umbrella in the rain . (p=0.000334)
+  1) a man holding an umbrella in the rain (p=0.000145)
+  2) a man holding an umbrella in front of a building . (p=0.000098)

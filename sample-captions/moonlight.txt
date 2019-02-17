@@ -1,0 +1,5 @@
+Captioning image ./sample-images/moonlight.jpg
+Captions for image moonlight.jpg:
+  0) a man laying on a surfboard in the water . (p=0.001095)
+  1) a man is sitting on a surfboard in the water . (p=0.000654)
+  2) a man laying on a surfboard in the water (p=0.000261)

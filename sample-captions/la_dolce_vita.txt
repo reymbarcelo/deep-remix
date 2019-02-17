@@ -1,0 +1,5 @@
+Captioning image ./sample-images/la_dolce_vita.jpg
+Captions for image la_dolce_vita.jpg:
+  0) a woman and a dog are in the water . (p=0.000109)
+  1) a woman and a dog are on a boat . (p=0.000050)
+  2) a woman and a dog are in the water (p=0.000037)

@@ -109,5 +109,5 @@ bazel-*
 # Rename file (local only)
 rename.py
 
-# Checkpoint files
-model2.ckpt-2000000*
+# Model checkpoint files
+model*
