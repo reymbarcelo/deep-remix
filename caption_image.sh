@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Inspired by https://github.com/KranthiGV/Pretrained-Show-and-Tell-model
+
 # JPEG image file to caption.
 IMAGE_FILE="./sample-images/$1"
 
