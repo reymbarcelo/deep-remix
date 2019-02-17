@@ -3,7 +3,7 @@
 # Inspired by https://github.com/KranthiGV/Pretrained-Show-and-Tell-model
 
 # JPEG image file to caption.
-IMAGE_FILE="./sample-images/$1"
+IMAGE_FILE="./$1"
 
 echo "Captioning image $IMAGE_FILE"
 
