@@ -113,3 +113,5 @@ rename.py
 model*
 
 sample-video-frames*
+
+checkpoint
