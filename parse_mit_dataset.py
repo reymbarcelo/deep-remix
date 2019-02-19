@@ -14,6 +14,7 @@ MIT_FRAMES_PATH = "./sample-video-frames/"
 SAMPLE_FRAMES_PATH = "./sample-images/"
 
 FRAME_NUM = 45
+IMAGES_PER_MODEL = 200
 
 CHECKPOINT_PATH="./model2.ckpt-2000000"
 VOCAB_FILE="./word_counts.txt"
@@ -44,10 +45,11 @@ def generate_captions(path=MIT_FRAMES_PATH):
 		captionwriter = csv.writer(caption_file, delimiter=' ', quotechar='|', quoting=csv.QUOTE_MINIMAL)
 		# Iterate over all frames
 		filenames = [(path + filename) for filename in listdir(path)]
-		for filename, caption in zip(filenames, run_model(filenames)):
-			print(filename)
-			print(caption)
-			captionwriter.writerow([caption, filename])
+		for i in range(0, len(filenames), IMAGES_PER_MODEL):
+			for filename, caption in zip(filenames[i:i+IMAGES_PER_MODEL], run_model(filenames[i:i+IMAGES_PER_MODEL])):
+				print(filename)
+				print(caption)
+				captionwriter.writerow([caption, filename])
 
 def run_model(filenames):
   # Build the inference graph.
