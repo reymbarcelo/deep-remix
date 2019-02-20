@@ -7,16 +7,19 @@ Download the following files:
 - Model: https://drive.google.com/file/d/17KIwjWC8BoozeYsClhU20MHM44Le6NT3/view?usp=sharing
 
 To generate a caption for an image, run 
+~~~~
+./caption_image.sh {path}/{to}/{your}/{image}
+~~~~
 
 # Sample image captions
-!(https://github.com/reymbarcelo/deep-remix/blob/master/sample-gifs/1.gif)
+![alt](https://github.com/reymbarcelo/deep-remix/blob/master/sample-gifs/1.gif)
 
 a man is in the air on a snowboard .
 
-!(https://github.com/reymbarcelo/deep-remix/blob/master/sample-gifs/2.gif)
+![alt](https://github.com/reymbarcelo/deep-remix/blob/master/sample-gifs/2.gif)
 
 a group of people standing in a kitchen .
 
-!(https://github.com/reymbarcelo/deep-remix/blob/master/sample-gifs/3.gif)
+![alt](https://github.com/reymbarcelo/deep-remix/blob/master/sample-gifs/3.gif)
 
 a group of people sitting around a table with laptops .
