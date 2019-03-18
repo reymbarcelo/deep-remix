@@ -1,5 +1,0 @@
-Captioning image ./sample-images/umbrellas_of_cherbourg.jpg
-Captions for image umbrellas_of_cherbourg.jpg:
-  0) a woman is talking on her cell phone . (p=0.001034)
-  1) a woman is talking on her cell phone (p=0.000529)
-  2) a woman is talking on a cell phone . (p=0.000446)

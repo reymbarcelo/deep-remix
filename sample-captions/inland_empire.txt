@@ -1,5 +1,0 @@
-Captioning image ./sample-images/inland_empire.jpg
-Captions for image inland_empire.jpg:
-  0) a group of people sitting around a living room . (p=0.002036)
-  1) a group of people sitting around a living room together . (p=0.001126)
-  2) a group of people sitting on a couch in a living room . (p=0.000585)

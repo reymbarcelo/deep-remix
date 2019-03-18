@@ -1,5 +1,0 @@
-Captioning image ./sample-images/three_colors_red.jpg
-Captions for image three_colors_red.jpg:
-  0) a man holding a cell phone up to his ear . (p=0.000898)
-  1) a man is talking on his cell phone . (p=0.000612)
-  2) a man is talking on his cell phone (p=0.000421)
