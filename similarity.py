@@ -99,7 +99,7 @@ def map_description_to_clip_bleu(caption, caption_map):
 			best_clip = candidate_clip
 			best_score = curr_score
 			best_caption = candidate_caption
-	return best_clip, candidate_caption
+	return best_clip, best_caption
 
 
 
