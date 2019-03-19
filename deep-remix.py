@@ -1,10 +1,8 @@
-import csv
 import cv2
 import glob
 import nltk
 import operator
 import os
-import pickle
 import sys
 import tensorflow as tf
 
@@ -18,7 +16,7 @@ from im2txt.inference_utils import vocabulary
 from moviepy.editor import VideoFileClip, concatenate_videoclips
 from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip, ffmpeg_extract_audio, ffmpeg_merge_video_audio
 from os import listdir
-from similarity import map_description_to_clip
+from similarity import map_description_to_clip, generate_maps
 
 CLIP_LEN = 3
 
@@ -32,8 +30,6 @@ REMIX_DIRECTORY = 'remix_files/remix_videos/'
 CAPTION_DIRECTORY = 'remix_files/captions/'
 
 MATCHING = "entities"
-
-VOCAB_FILE = "word_counts.txt"
 
 ###############################################################################
 
@@ -88,17 +84,11 @@ def generate_captions(frames_directory):
 
 def generate_remix_filenames(captions, matching):
 	# For all clip descriptions, find an appropriate remix clip and return its filename.
-	with open('entity_dict.pkl', 'rb') as f:
-			entity_dict = pickle.load(f)
-	vocab = {}
-	with open(VOCAB_FILE) as f:
-		for line in f:
-			(word, freq) = line.split()
-			vocab[word] = int(freq)
+	entity_dict, action_dict, vocab, caption_map = generate_maps()
 	remix_filenames = []
 	justifications = []
 	for caption in captions:
-		remix_filename, justification = map_description_to_clip(caption, entity_dict, vocab, matching)
+		remix_filename, justification = map_description_to_clip(caption, entity_dict, action_dict, vocab, caption_map, matching)
 		remix_filenames.append(remix_filename)
 		justifications.append(justification)
 	return remix_filenames, justifications
